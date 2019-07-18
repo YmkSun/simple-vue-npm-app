@@ -4,8 +4,6 @@
   "author": "Evan You",
   "private": true,
   "scripts": {
-    "dev": "node build/server.js",
-    "dev:dist": "rollup -wm -c build/rollup.dev.config.js",
     "build": "node build/build.js"
   },
   "devDependencies": {
