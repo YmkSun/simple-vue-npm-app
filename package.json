@@ -7,15 +7,7 @@
     "dev": "node examples/server.js",
     "dev:dist": "rollup -wm -c build/rollup.dev.config.js",
     "build": "node build/build.js",
-    "lint": "eslint src test examples",
-    "test": "npm run lint && npm run flow && npm run test:unit && npm run test:e2e && npm run test:types",
-    "flow": "flow check",
-    "test:unit": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
-    "test:e2e": "node test/e2e/runner.js",
-    "test:e2e:ci": "node test/e2e/runner.js --local -e ie,android44 -c test/e2e/nightwatch.browserstack.js test/e2e/specs/active-links.js",
-    "test:e2e:ff": "node test/e2e/runner.js -e firefox -c test/e2e/nightwatch.config.js",
-    "test:e2e:ie9": "node test/e2e/runner.js --local -e ie9 -c test/e2e/nightwatch.browserstack.js --skiptags history,ie9-fail",
-    "test:types": "tsc -p types/test"
+    "test": "npm run lint && npm run flow && npm run test:unit && npm run test:e2e && npm run test:types"
   },
   "devDependencies": {
     "axios": "^0.19.0",
@@ -33,9 +25,6 @@
     "css-loader": "^2.1.1",
     "dotenv": "^8.0.0",
     "es6-promise": "^4.2.8",
-    "eslint": "^4.19.1",
-    "eslint-plugin-flowtype": "^2.46.1",
-    "eslint-plugin-vue-libs": "^2.1.0",
     "express": "^4.17.1",
     "express-urlrewrite": "^1.2.0",
     "flow-bin": "^0.66.0",
